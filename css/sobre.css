@@ -8,4 +8,9 @@
     margin: 50px 100px;
     font-size: 1.35rem;
   }
+
+  .div-text {
+    font-size: 20px;
+    padding: 5rem;
+  }
 }

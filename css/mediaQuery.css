@@ -1,0 +1,107 @@
+@media (max-width: 768px) {
+  .div-image {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
+
+  header {
+    font-size: 12px;
+    padding-left: 0;
+    height: 120px;
+    display: flex;
+
+    & a {
+      img {
+        width: 100%;
+      }
+    }
+
+    nav{
+      min-width: 30%;
+
+      a{
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .main{
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .absolute {
+    display: none;
+  }
+
+  .quais-servicos {
+    text-align: left;
+    background-color: ghostwhite;
+    padding: 2rem;
+  }
+
+  form {
+    max-width: calc(100% - 80px);
+    overflow: hidden;
+    max-width: 100%;
+    width: calc(100vw - 80px);
+
+    input,
+    p,
+    .form-group {
+      max-width: 100%;
+    }
+  }
+
+  #verificaCep {
+    display: block;
+  }
+
+  #secSobre {
+    ul li {
+      margin: 25px 55px;
+      font-size: 1.35rem;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+
+  
+  body.dark {
+    #secSobre {
+      ul li {
+        background-color: rgb(163 108 255 / 25%);
+      }
+    }
+  }
+
+  .form-contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  #contact-form {
+    min-width: 0;
+  }
+
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: 100%;
+  }
+
+  #secPort {
+    display: none;
+  }
+
+  #carrossel-portifolio {
+    display: revert;
+  }
+}

@@ -4,9 +4,10 @@
 <head>
     <title>Creative Visualizer | Home</title>
     <meta name="descrição" content="Create Visualizer, a melhor empresa para de envelopamento do Brasil.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -31,16 +32,21 @@
 
     <main>
         <section id="home">
-            <img id="main-logo" class="logo" src="../imagens/logo_cv_sem_fundo.png" alt="" width="580" height="580">
+            <div class="div-image"><img id="main-logo" class="logo" src="../imagens/logo_cv_sem_fundo.png" alt="" ></div>
 
             <div id="home-message">
                 <h1 class="tituloMP">Seu carro, sua identidade, nosso toque.</h1>
                 <p class="paragraph">Impacte onde quer que vá, seja para personalização pessoal ou divulgação de sua marca. A Creative Visualizer te ajuda a criar um visual exclusivo e inesquecível. Muito mais que um envelopamento, uma experiência! Entre em contato para mais informações:</p>
+            <div class="div-btn-home">
                 <a class="button" href="https://wa.me/5511998116279" target="_blank">Falar com atendente</a>
                 <a class="button" href="./paginas/contato.html">Contato por e-mail</a>
             </div>
+            
+            </div>
 
-            <img class="absolute" src="../imagens/shape.png" alt="">
+            <div>
+                <img class="absolute" src="../imagens/shape.png" alt="">
+            </div>
         </section>
 
         <section id="shop-cv" class="home">
@@ -58,7 +64,7 @@
         </section>
 
         <section id="duvidas">
-            <img src="../imagens/duvida.png" alt="" width="540" height="540" loading="lazy">
+            <div class="div-image"><img class="img-duvida" src="../imagens/duvida.png" alt="" loading="lazy"></div>
 
             <div>
                 <h2>Dúvidas Frequentes:</h2>

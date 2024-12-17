@@ -9,12 +9,15 @@
 #main-logo {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   margin: 0;
   font-family: "Poppins", serif;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 body.light {
@@ -92,11 +95,27 @@ header {
   }
 }
 
+.div-image {
+  width: 100%;
+}
+
+
+
 #home {
   display: flex;
   align-items: center;
   gap: 25px;
   position: relative;
+
+
+  .div-btn-home{
+    display: inline-grid;
+    gap: 1rem;
+  }
+  
+  #home-message{
+    margin: 2rem;
+  }
 }
 
 h1,
@@ -194,6 +213,11 @@ footer {
   }
 }
 
+.img-duvida {
+  width: 14rem;
+  height: 14rem;
+}
+
 .duvida {
   position: relative;
 
@@ -265,5 +289,25 @@ footer {
   }
 }
 
+#carrossel-portifolio {
+  display: none;
 
+  .carrossel {
+    overflow: hidden;
+    width: 100vw;
+    border: 1px solid #f1e8fe;
+    border-radius: 1rem;
+  }
 
+  .container {
+    display: flex;
+    transition: transform 1s linear;
+    transform: translateX(0);
+  }
+
+  .img-e {
+    object-fit: cover;
+    width: 100%;
+    height: 580px;
+  }
+}

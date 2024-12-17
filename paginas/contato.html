@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/formContato.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -30,17 +31,25 @@
         <button class="toggle-button" onclick="toggleScheme()"><img src="../imagens/5262027.png" alt=""></button>
     </header>
     <main>
-        <section class="form-contato">
+        <section class="form-contato" action="https://formsubmit.co/camilemacedo1600@gmail.com" method="POST">
             <h1>Contato</h1>
-            <form id="contact-form" action="https://formsubmit.co/munarao.pedro@gmail.com" method="POST">
-                <label for="name">Nome:</label> 
-                <input type="text" id="name" name="name" required>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -48,7 +57,9 @@
     </main>
     <footer>
         <div>
-            <img src="../imagens/logo_cv_small.png" alt="logo">
+            <div class="div-image">
+                <img src="../imagens/logo_cv_small.png" alt="logo">
+            </div>
             <p class="paragraph">Seu carro, sua identidade, nosso toque.</p>
         </div>
 

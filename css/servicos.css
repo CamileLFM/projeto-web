@@ -1,10 +1,7 @@
 .quais-servicos {
-  padding: 64px, 80px;
   text-align: left;
   background-color: ghostwhite;
   padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 80px;
 }
 
 img {
@@ -28,5 +25,3 @@ img {
   flex: 1;
   min-width: 300px;
 }
-
-

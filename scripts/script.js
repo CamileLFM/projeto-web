@@ -21,7 +21,7 @@ if (imagesCarrossel !== null && images !== null) {
             idx = 0;
         }
 
-        imagesCarrossel.style.transform = `translateX(${-idx * 580}px)`;
+        imagesCarrossel.style.transform = `translateX(${-idx * 10}px)`;
     }
 }
 
@@ -62,7 +62,7 @@ function toggleScheme() {
 })();
 
 // ---------------------------------------------------------------------
-// função viaCEP com validação de estado
+// função viaCEP
 async function buscarEndereco(cep) {
     try {
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
@@ -75,11 +75,13 @@ async function buscarEndereco(cep) {
             return;
         }
 
+        // Preenchendo os campos
         document.getElementById('endereco').value = data.logradouro || '';
         document.getElementById('bairro').value = data.bairro || '';
         document.getElementById('cidade').value = data.localidade || '';
         document.getElementById('estado').value = data.uf || '';
 
+        // Validando o estado
         validarEstado(data.uf);
     } catch (error) {
         console.error('Erro:', error);
@@ -113,19 +115,15 @@ function onCepBlur(event) {
 }
 
 // ------------------------------------
-// função mandar form de contato e validação
+// função mandar form de contato
 const form = document.getElementById('contact-form');
 
 if (form !== null) {
     form.addEventListener('submit', (e) => {
+        e.preventDefault();
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-
-        if (!name || !email || !message) {
-            alert('Por favor, preencha todos os campos antes de enviar.');
-            e.preventDefault(); 
-            return;
-        }
+        window.location.href = `mailto:contato@creative.com?subject=Contato de ${name}&body=${message} (Email: ${email})`;
     });
 }
