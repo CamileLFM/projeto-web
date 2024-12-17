@@ -1,0 +1,14 @@
+#secPort {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-port {
+  img {
+    display: inline-block;
+    max-height: 700px;
+    max-width: 470px;
+  }
+}
